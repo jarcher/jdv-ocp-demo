@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vdb name="sample" version="1">
+
+  <description>SAMPLE VDB</description>
+
+<model name="DataServiceLayer" type="VIRTUAL" visible="true">
+<metadata type="DDL"><![CDATA[
+
+CREATE VIEW service(
+	col1 integer NOT NULL,
+	col2 string(50) NOT NULL,
+	CONSTRAINT PK0 PRIMARY KEY(col1)
+) OPTIONS(NAMEINSOURCE 'data') 
+AS
+	SELECT 1, 'first entry'
+	UNION ALL 
+	SELECT 2, 'second entry'
+	UNION ALL
+	SELECT 3, 'third entry'
+	;
+]]></metadata>
+</model>
+
+</vdb>
