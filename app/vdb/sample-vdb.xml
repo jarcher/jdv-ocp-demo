@@ -17,6 +17,8 @@ AS
 	SELECT 2, 'second entry'
 	UNION ALL
 	SELECT 3, 'third entry'
+	UNION ALL
+        SELECT 4, 'fourth entry'
 	;
 ]]></metadata>
 </model>
